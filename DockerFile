@@ -1,0 +1,7 @@
+From node:10
+WORKDIR /app
+copy package.json /app
+run npm install
+copy . /app
+cmd node app.js
+expose 3000
